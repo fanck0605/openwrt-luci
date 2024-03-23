@@ -220,6 +220,12 @@ return view.extend({
 			_("Reply maximum TTL for all domain result."));
 		o.rempty = true;
 
+		// bind arguments;
+		o = s.taboption("settings", form.Value, "bind_args", _("Bind arguments"),
+			_("Specify bind arguments."));
+		o.rmempty = true;
+		o.rempty = true;
+
 		// second dns server;
 		// Eanble;
 		o = s.taboption("seconddns", form.Flag, "seconddns_enabled", _("Enable"),
